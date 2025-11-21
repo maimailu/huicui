@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<meta charset="utf-8">
+	<title>昇陽匯翠</title>
+
+	<!--	Robot Meta Tag 的用法主要是在於告訴搜索引擎要或不要索引你的網頁-->
+	<meta name="robots" content="index">
+
+	<!--關鍵字-->
+	<meta name="keywords" content="昇陽匯翠,A10,江子翠生活圈,江子翠,公園,公園宅,萬坪公園" />
+	<meta name="description" content="江子翠生活圈 萬坪公園首席 醇靜28-45坪" />
+
+	<!--標註本網頁作者姓名等資料-->
+	<meta name="author" content="昇陽匯翠">
+
+	<!--FB看的-->
+	<!--頁面內容描述-->
+	<meta name="description" content="萬坪公園首席   江子翠生活圈
+18-30-45坪松柏靚居   2257-6868">
+	<meta property="og:description" content="萬坪公園首席   江子翠生活圈
+18-30-45坪松柏靚居   2257-6868">
+
+	<!--FB看的-->
+	<!--縮圖網址-->
+	<meta itemprop="imag" content=" ./img/preview.jpg">
+	<meta property="og:image" content="./img/preview.jpg">
+
+
+	<!-- Schema標記，支援的有Google+, Pinterest 及 LinkedIn -->
+	<meta itemprop="name" content="萬坪公園首席   江子翠生活圈
+18-30-45坪松柏靚居   2257-6868">
+	<meta itemprop="description" content="萬坪公園首席   江子翠生活圈
+18-30-45坪松柏靚居   2257-6868">
+	<meta itemprop="image" content="./img/preview.jpg">
+
+
+	<link rel="icon" type="image/png" href="img/favicon.ico" />
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width， initial-scale=1">
+
+	<!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link href="css/maimai.css" rel="stylesheet">
+
+	<!-- Custom Fonts -->
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	<!-- Noto Serif Traditional Chinese -->
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700&display=swap');
+	</style>
+	<!-- Noto Serif Traditional Chinese -->
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC');
+	</style>
+
+	<!-- Noto Sans Traditional Chinese -->
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC');
+	</style>
+
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<!-- wow利用css将滚动条隐藏-->
+	<style>
+		.wow:first-child {
+			visibility: hidden;
+		}
+	</style>
+
+
+	<!-- gotop-->
+	<meta name="toTop" content="true">
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script type="text/javascript" src="toTop.js"></script>
+
+	<!--swiperjs CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+
+	<!-- 葉子效果 -->
+	<link rel="stylesheet" href="./leaves.css">
+
+	<!-- fullPage.js  -->
+	<!-- 先跑 上方的 jQuery.js 再跑fullPage -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.37/fullpage.min.js"></script>
+	<link rel="stylesheet" href="css/jquery.fullPage.min.css">
+
+
+	<!-- YouTube 背景影片 -->
+	<link rel="stylesheet" href="video-background.css" />
+	<script src="video-background.js"></script>
+
+	<!-- AOS.js效果 -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+	<!-- parallax effects 效果 -->
+	<!-- 僅在桌面版載入，手機版完全禁用 -->
+	<script>
+		// 檢測是否為桌面版 - 用多種方式確保準確
+		function isDesktopDevice() {
+			// 檢查多個條件，確保不是手機/平板
+			return window.innerWidth > 768 &&
+				window.matchMedia("(min-width: 769px)").matches &&
+				!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
+		}
+
+		if (isDesktopDevice()) {
+			// 延遲載入，確保 DOM 完全準備好
+			window.addEventListener('load', function () {
+				setTimeout(function () {
+					try {
+						// 載入 locomotive scroll
+						var locomotiveScript = document.createElement('script');
+						locomotiveScript.src =
+							'https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js';
+						locomotiveScript.async = true;
+						locomotiveScript.onerror = function () {
+							console.warn('Locomotive scroll 載入失敗，parallax 功能將被禁用');
+						};
+						document.head.appendChild(locomotiveScript);
+
+						// 載入 parallax script
+						setTimeout(function () {
+							var parallaxScript = document.createElement('script');
+							parallaxScript.src = './parallax effects script.js';
+							parallaxScript.async = true;
+							parallaxScript.onerror = function () {
+								console.warn('Parallax script 載入失敗');
+							};
+							document.head.appendChild(parallaxScript);
+						}, 300);
+					} catch (e) {
+						console.error('Parallax 初始化失敗:', e);
+					}
+				}, 100);
+			});
+		}
+	</script>
+
+	<!-- Google Tag Manager -->
+	<script>
+		(function (w, d, s, l, i) {
+			w[l] = w[l] || [];
+			w[l].push({
+				'gtm.start': new Date().getTime(),
+				event: 'gtm.js'
+			});
+			var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s),
+				dl = l != 'dataLayer' ? '&l=' + l : '';
+			j.async = true;
+			j.src =
+				'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+			f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-NVK6NJ34');
+	</script>
+	<!-- End Google Tag Manager -->
+
+</head>
+
+<body id="page-top" class="index">
+
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NVK6NJ34" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+
+	<!--	修復background-attachment:fixed這個屬性-->
+	<div class="background"> </div>
+
+
+	<!-- loading加載效果-->
+	<!-- <div class="loaderbg">
+		<div class="spinner">
+			<div class="double rect1"></div>
+			<div class="double rect2"></div>
+			<div class="double recfont-desc"></div>
+			<div class="double rect4"></div>
+			<div class="double rect5"></div>
+		</div>
+	</div> -->
+
+	<!-- Header -->
+
+	<header>
+
+		<!-- 背景影片容器 -->
+
+		<div class="">
+			<iframe style=" width:1920px; height: 1080px;"
+				src="https://www.youtube.com/embed/fkrGTBqo00w?autoplay=1&mute=1&loop=1&playlist=fkrGTBqo00w&controls=0&disablekb=1&modestbranding=1&playsinline=1"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen>
+			</iframe>
+
+
+			<!-- 半透明色塊 -->
+			<div class="bg-color">
+
+			</div>
+
+			<div class="logo2">
+				<div data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="3000">
+					<img src="./img/logo.png">
+				</div>
+			</div>
+
+			<!-- 圖說 -->
+			<!-- <div class="pic-txt">空拍實景</div> -->
+		</div>
+
+
+	</header>
+
+	<!-- brand Section -->
+
+	<section id="" class="bg01">
+		<div class="page1">
+			<div class="pic_pageleft wow animate__animated animate__fadeInLeft">
+				<!-- Swiper1 -->
+				<div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff">
+					<div class="swiper mySwiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="pic/1/pic01-1.jpg" alt="..." style="	width: 100%;">
+							</div>
+							<div class="swiper-slide"><img src="pic/1/pic01-2.jpg" alt="..." style="	width: 100%;">
+							</div>
+							<div class="swiper-slide"><img src="pic/1/pic01-3.jpg" alt="..." style="	width: 100%;">
+							</div>
+							<div class="swiper-slide"><img src="pic/1/pic01-4.jpg" alt="..." style="	width: 100%;">
+							</div>
+							<div class="swiper-slide"><img src="pic/1/pic01-5.jpg" alt="..." style="	width: 100%;">
+							</div>
+
+
+						</div>
+						<!-- 如果需要分頁器 -->
+						<div class="swiper-pagination"></div>
+
+						<!-- 如果需要導航按鈕 -->
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class=" content-container wow animate__animated animate__fadeInRight">
+				<img src="pic/1/logo01.png" class="logo-img">
+				<div class="pageright ">
+					<h2 class="section-title">做自己的太陽 你就是別人的光</h2>
+					<p class="textmain">
+						昇陽SUNTY，取自Sun與Eternity，象徵用心蓋自己的家。<br>
+						「昇陽」如同一顆升起的太陽，溫暖照耀人心。<br><br>
+						自1980年以來，40多年締造逾70個經典個案，超過5000
+						戶幸福住戶，並提供安心完善的售後服務。
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div class=" flower01-relative wow animate__animated animate__fadeInRight" style="">
+			<img src="pic/1/flower01.png" alt="" class=" flower01">
+		</div>
+
+
+
+		<div class="page1">
+
+			<div class="content-container wow animate__animated animate__fadeInLeft">
+				<div class="pageright ">
+					<h2 class="section-title">用情至森，最懂板橋的上市品牌</h2>
+					<p class="textmain">
+						昇陽建設鍾情於板橋，陪伴板橋人最久，深耕多年共累積8座經典作品。昇陽懂板橋，更懂蓋好宅。
+					</p>
+
+					<img src="pic/1/brand.png" class="brand-img">
+				</div>
+			</div>
+
+			<div class="pic_pageright wow animate__animated animate__fadeInRight">
+				<!-- Swiper2 -->
+				<div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff">
+					<div class="swiper mySwiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="pic/1/pic01-6.jpg" alt="..." style="	width: 100%;">
+							</div>
+							<div class="swiper-slide"><img src="pic/1/pic01-7.jpg" alt="..." style="	width: 100%;">
+							</div>
+							<div class="swiper-slide"><img src="pic/1/pic01-8.jpg" alt="..." style="	width: 100%;">
+							</div>
+							<div class="swiper-slide"><img src="pic/1/pic01-9.jpg" alt="..." style="	width: 100%;">
+							</div>
+
+
+
+						</div>
+						<!-- 如果需要分頁器 -->
+						<div class="swiper-pagination"></div>
+
+						<!-- 如果需要導航按鈕 -->
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- park Section -->
+	<div class="park bg01" id="">
+
+		<div class="page1">
+
+
+			<div class=" content-container wow animate__animated animate__fadeInRight">
+				<div class="page-center ">
+					<h2 class="section-title">樂活機能滿滿，靚邀公園知音</h2>
+					<p class="textmain-center">
+						遼闊草原、音符廣場、遊樂設施間，有長者閒暇、孩童嘻笑、家庭天倫，公園一日四時，全齡共享。<br>森活感，就是怎麼簡單悠然。
+					</p>
+				</div>
+
+				<div class=" flower01-relative wow animate__animated animate__fadeInRight" style="">
+					<img src="pic/1/flower01.png" alt="" class=" flower01">
+				</div>
+			</div>
+		</div>
+
+		<!-- Swiper2 -->
+		<div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff">
+			<div class="swiper mySwiper2 parallax-section">
+				<div class="swiper-wrapper">
+
+
+
+					<div class="swiper-slide">
+						<div class=" slide-inner"><img src="pic/2/pic02-1.jpg" alt="..."></div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class=" slide-inner"><img src="pic/2/pic02-2.jpg" alt="..."></div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class=" slide-inner"><img src="pic/2/pic02-3.jpg" alt="..."></div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class=" slide-inner"><img src="pic/2/pic02-4.jpg" alt="..."></div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class=" slide-inner"><img src="pic/2/pic02-5.jpg" alt="..."></div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class=" slide-inner"><img src="pic/2/pic02-6.jpg" alt="..."></div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class=" slide-inner"><img src="pic/2/pic02-7.jpg" alt="..."></div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class=" slide-inner"><img src="pic/2/pic02-8.jpg" alt="..."></div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class=" slide-inner"><img src="pic/2/pic02-9.jpg" alt="..."></div>
+					</div>
+
+
+					<div class="swiper-slide">
+						<div class=" slide-inner"><img src="pic/2/pic02-10.jpg" alt="..."></div>
+					</div>
+
+
+
+
+				</div>
+				<!-- 如果需要分頁器 -->
+				<div class="swiper-pagination"></div>
+
+				<!-- 如果需要導航按鈕 -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+
+			</div>
+		</div>
+
+		<!-- 公園長影片 Section -->
+		<div class="youtube-iframe">
+			<iframe width="1536" height="864" src="https://www.youtube.com/embed/j5AHzMSMFQA?si=VAO0vO2wL-dZq70-"
+				title="YouTube video player" frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+			</iframe>
+		</div>
+
+		<div class=" flower01-relative wow animate__animated animate__fadeInRight" style="">
+			<img src="pic/1/flower02.png" alt="" class=" flower02">
+		</div>
+
+	</div>
+
+
+
+	<!-- traffic Section -->
+
+	<section id="" class="bg01">
+		<div class="page1">
+
+
+			<div class=" content-container wow animate__animated animate__fadeInRight">
+				<div class="page-center ">
+					<h2 class="section-title">親距捷運江子翠，一線新板雙北城</h2>
+					<p class="textmain-center">
+						800米江子翠捷運生活圈，文化雙十路商圈豐盛日常，文聖街民生採買即刻滿足。<br>
+						縣民大道直抵新板特區，百貨飯店五鐵樞紐匯集，雙北核心四通八達精采生活。
+					</p>
+				</div>
+
+				<div class=" flower01-relative wow animate__animated animate__fadeInRight" style="">
+					<img src="pic/1/flower01.png" alt="" class=" flower01">
+				</div>
+			</div>
+		</div>
+
+
+		<div class="pic-center wow animate__animated animate__fadeIn">
+			<!-- Swiper3 -->
+			<div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff">
+				<div class="swiper mySwiper2">
+					<div class="swiper-wrapper">
+
+						<div class="swiper-slide">
+							<div class=" slide-inner"><img src="pic/3/pic03-1.jpg" alt="..."></div>
+						</div>
+						<div class="swiper-slide">
+							<div class=" slide-inner"><img src="pic/3/pic03-2.jpg" alt="..."></div>
+						</div>
+						<div class="swiper-slide">
+							<div class=" slide-inner"><img src="pic/3/pic03-3.jpg" alt="..."></div>
+						</div>
+						<div class="swiper-slide">
+							<div class=" slide-inner"><img src="pic/3/pic03-4.jpg" alt="..."></div>
+						</div>
+						<div class="swiper-slide">
+							<div class=" slide-inner"><img src="pic/3/pic03-5.jpg" alt="..."></div>
+						</div>
+
+					</div>
+					<!-- 如果需要分頁器 -->
+					<div class="swiper-pagination"></div>
+
+					<!-- 如果需要導航按鈕 -->
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+			</div>
+		</div>
+
+
+	</section>
+
+	<!-- team section -->
+	<div class="team" id="">
+
+		<div class="parallax-section slide3">
+			<!-- Swiper4 -->
+			<div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff">
+				<div class="swiper mySwiper2">
+					<div class="swiper-wrapper">
+
+
+
+						<div class="swiper-slide">
+							<div class=" slide-inner"><img src="pic/4/pic04-1.jpg" alt="..."></div>
+
+						</div>
+
+						<div class="swiper-slide">
+							<div class=" slide-inner"><img src="pic/4/pic04-2.jpg" alt="..."></div>
+
+						</div>
+
+						<div class="swiper-slide">
+							<div class=" slide-inner"><img src="pic/4/pic04-3.jpg" alt="..."></div>
+
+						</div>
+
+						<div class="swiper-slide">
+							<div class=" slide-inner"><img src="pic/4/pic04-4.jpg" alt="..."></div>
+
+						</div>
+
+
+
+					</div>
+					<!-- 如果需要分頁器 -->
+					<div class="swiper-pagination"></div>
+
+					<!-- 如果需要導航按鈕 -->
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- arch section -->
+	<div class="bg02 arch01 pic-relative" id="">
+
+		<div class="arch-abs wow animate__animated animate__fadeInLeft">
+			<h2 class="arch-title">松柏匯翠，成雙綻放<br>
+				昇陽樹居，經典傳頌</h2>
+
+		</div>
+
+		<div class="arch-img wow animate__animated animate__fadeInRight">
+			<img src="pic/5/arch01.png" class="">
+		</div>
+
+
+	</div>
+
+
+
+	<div class="arch02 ">
+
+		<div class="parallax-section slide4">
+
+
+			<!-- Swiper5 -->
+			<div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff">
+				<div class="swiper mySwiper2">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class=" slide-inner"><img src="pic/5/arch-pic01.jpg" alt="..."></div>
+							<div class="infoImg">3D合成示意圖</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class=" slide-inner"><img src="pic/5/arch-pic02.jpg" alt="..."></div>
+							<div class="infoImg">松翠3D合成示意圖</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class=" slide-inner"><img src="pic/5/arch-pic03.jpg" alt="..."></div>
+							<div class="infoImg">柏翠3D合成示意圖</div>
+						</div>
+
+
+
+
+					</div>
+					<!-- 如果需要分頁器 -->
+					<div class="swiper-pagination"></div>
+
+					<!-- 如果需要導航按鈕 -->
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- contact Section -->
+
+	<div class="section " id="">
+
+		<div class=" contact contact-relative" id="">
+
+			<div class=" pc-contact-bg">
+				<img src="pic/contact/contact-bg.jpg" alt="" style="width: 100%;">
+			</div>
+			<div class=" iphone-contact-bg">
+				<img src="pic/contact/iphone-contact-bg.jpg" alt="" style="">
+			</div>
+
+
+
+			<div class="contact-map">
+
+				<div class="contact-text text-center wow animate__animated animate__fadeInUp">
+					<img src="pic/contact/contact-text.png" alt="" class="img-responsive" style="width: 100%;">
+				</div>
+
+
+
+				<div class="contact-form contact-width">
+
+					<div class="text-center  wow animate__animated animate__fadeIn ">
+						<!--連絡我們表單-->
+						<form name="sentMessage" id="contactForm">
+
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="貴賓姓名" id="name" name="name"
+									required id="name">
+								<p class="help-block text-danger"></p>
+							</div>
+
+
+
+							<div class="form-group">
+								<input type="tel" class="form-control" placeholder="聯絡電話" id="phone" name="phone"
+									required id="phone>
+									<p class=" help-block text-danger"></p>
+							</div>
+
+
+
+							<div class="twzipcode" id="zipcode3">
+
+								<input type="hidden" data-role="zipcode" />
+							</div>
+
+
+							<div class="row">
+								<div class="col-md-6 col-xs-6">
+									<div class="form-group ">
+										<select class="form-select form-control house-type" name="housetype"
+											aria-label="Default select example" required id="houseType">
+											<option selected value>房型需求</option>
+											<option value="1房">1房</option>
+											<option value="2房">2房</option>
+											<option value="3房">3房</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="col-md-6 col-xs-6">
+									<div class="form-group ">
+										<select class="form-select form-control tel-time" name="use"
+											aria-label="Default select example" required id="use">
+											<option selected value>購屋用途</option>
+											<option value="自用">自用</option>
+											<option value="換屋">換屋</option>
+											<option value="投資">投資</option>
+											<option value="置產">置產</option>
+											<option value="贈與">贈與</option>
+										</select>
+									</div>
+								</div>
+							</div>
+
+							<!--
+					<div class="form-group">
+						<input type="tel" class="form-control" placeholder="備註" id="message" name="message" data-validation-required-message="Please enter your phone number." required>
+						<p class="help-block text-danger"></p>
+					</div>-->
+
+
+
+							<div class="clearfix"></div>
+
+
+
+							<div class="col-lg-12 text-center">
+								<label class="checkbox" style="color: #000;font-size: 14px;">
+									<label><input type="checkbox" id="ehicle3" name="vehicle3" value="Boat" checked=""
+											data-validation-required-message="請確認個資事項" required>
+										本人已悉知</label>
+
+									<a href="#exampleModal" class="portfolio-link" data-bs-toggle="modal"
+										data-toggle="modal" style="color: #ca0916;display: inline;">個人資料聲明事項</a>
+
+								</label>
+							</div>
+
+
+							<div class=" text-center">
+								<div id="success"></div>
+								<button type="submit" class="btn btn-xl" name="button">送出訊息</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class=" contact-deco wow animate__animated animate__fadeInLeft" style="">
+				<img src="pic/contact/flower.png" alt="">
+			</div>
+
+			<!-- 葉子飄 -->
+
+			<div class=" leaf-area">
+				<!-- 斜向飄落 -->
+				<img class="leaf" src="pic/contact/left.png" style="left:2vw; animation-delay: 0s;">
+				<img class="leaf" src="pic/contact/left.png" style="left:13vw; animation-delay: 1.2s;">
+				<img class="leaf" src="pic/contact/left.png" style="left:27vw; animation-delay: 2.3s;">
+				<img class="leaf" src="pic/contact/left.png" style="left:50vw; animation-delay: 3.7s;">
+				<!-- 橫向飄移 -->
+				<img class="leaf leaf-horizontal" src="pic/contact/left.png" style="top:10%; animation-delay: 1.5s;">
+				<img class="leaf leaf-horizontal" src="pic/contact/left.png" style="top:38%; animation-delay: 3s;">
+				<img class="leaf leaf-horizontal" src="pic/contact/left.png" style="top:70%; animation-delay: 2.2s;">
+			</div>
+
+			<!-- 葉子飄 end -->
+
+
+			<div class="google_iframe">
+				<iframe width="100%" height="600" class="mb30"
+					src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3615.163437079052!2d121.47994599999998!3d25.028526999999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjXCsDAxJzQyLjciTiAxMjHCsDI4JzQ3LjgiRQ!5e0!3m2!1szh-TW!2stw!4v1762162731843!5m2!1szh-TW!2stw"
+					frameborder="0" allowfullscreen></iframe>
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<footer>
+		<div class="container-fluid ">
+			<div class="container ">
+				<div class="row">
+
+					<div class="col-md-12">
+						<span class="copyright ">©2025 璞園建築團隊 版權所有</span>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+
+
+
+	<!-- 手機版出現固定訊息-->
+	<!-- <nav class="navbar-inverse navbar-fixed-bottom visible-xs">
+		<div style="font-size: 13px; color: #fff; border-top: 1px solid #999;    height: 70px;">
+			<a href="tel:0228363888" style="color: #fff">
+				<div class="col-xs-3 text-center" style="border-right: 1px solid #999"> <span class="glyphicon glyphicon-earphone" style="margin-right: 0px; display: block; margin-top: 10px; margin-bottom:8px;"></span>
+					<div style="height: 0px"></div>
+					立即來電
+				</div>
+			</a>
+			<a class="page-scroll" href="#contact" onclick="return false;" style="color: #fff">
+				<div class="col-xs-3 text-center" style="border-right: 1px solid #999"> <span class="glyphicon glyphicon-pencil" style="margin-right: 0px; display: block; margin-top: 10px; margin-bottom:8px;"></span>
+					<div style="height: 0px"></div>
+					預約賞屋
+				</div>
+
+			</a>
+			<a href="https://maps.app.goo.gl/GBKZ7xczxMnLsxCB8" style="color: #fff" target="_blank">
+				<div class="col-xs-3 text-center" style="border-right: 1px solid #999"> <span class="glyphicon glyphicon-map-marker" style="margin-right: 0px; display: block; margin-top: 10px; margin-bottom:8px;"></span>
+					<div style="height: 0px"></div>
+					地圖導航
+				</div>
+			</a>
+
+			<a href="https://www.facebook.com/anotherlifeH" style="color: #fff" target="_blank">
+				<div class="col-xs-3 text-center" style="border-right: 1px solid #999"> <span class="fa fa fa-facebook" style="margin-right: 0px; display: block; margin-top: 10px; margin-bottom:8px;"></span>
+					<div style="height: 0px"></div>
+					臉書粉絲
+				</div>
+			</a>
+		</div>
+	</nav> -->
+
+
+	<!-- Checkme Modal  -->
+
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+
+				<div style="font-size: 13px; color: #000; text-align: center">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+								aria-hidden="true">×</span></button>
+
+						<h4 class="modal-title" id="myModalLabel">個人資料保護政策暨隱私權聲明</h4>
+					</div>
+				</div>
+
+
+
+				<div class="modal-body text-muted">
+
+					<p>
+						依據個人資料保護法，向您告知以下隱私權政策規範，若您勾選「我同意隱私權政策」，將表示您已同意本公司之隱私權政策，並同意本公司依以下告知事項，就您的個人資料進行蒐集、處理及利用。您可以自由選擇是否提供相關個人資料，若您拒絕，本公司將可能無法執行本告知事項蒐集目的之業務，致無法向您提供相關服務：
+					</p>
+
+					<h4>一、蒐集目的和使用方式：</h4>
+					<p>
+						本公司依據個人資料保護法及相關法令之規定，為了提供您登錄網站、索取資料、訂閱資訊、反應意見、進行各種諮詢等服務；或為了與您聯繫、行銷（包括但不限於廣告及各項商品、活動、促銷、優惠訊息之通知等）、執行消費者及客戶管理分析、執行各種公司營業登記項目或組織章程所定業務範圍內之必要行為，對您的個人資料進行蒐集、處理、利用及國際傳輸。
+					</p>
+
+					<h4>二、蒐集之個人資料類別：</h4>
+					<p>
+						本公司向您蒐集的個人資料，依據「個人資料保護法之特定目的及個人資料之類別」，包含但不限於識別類、特徵類、社會情況、財務細節、商業資訊或其他等類別，例如姓名、行動電話、住家、辦公室電話號碼、E-mail、地址、身分證統一編號、性別、出生年月日或其他得以直接或間接識別您個人之資料。
+					</p>
+
+					<h4>三、個人資料利用之對象、地區、期間和方式：</h4>
+					<p>
+						(一)
+						對象：您所提供給本公司之個人資料，可能在蒐集目的之範圍內被分享給本公司之關係企業、其他與本公司有業務往來之機構、依法有調查權之機關或其他政府機構、或其他未受中央目的事業主管機關限制之國際傳輸個人資料接收者。
+						(二) 地區：前開對象所在地及國際傳輸所涉地點，包含但不限於中華民國。
+						(三) 期間：包括個人資料蒐集目的之存續期間、依相關法令或契約約定之保存期限、或本公司因執行業務所必須之保存期間。
+						(四)
+						方式：以自動化機器或其他非自動化之利用方式，包括但不限於以書面、電話、簡訊、傳真、電子郵件、網際網路、紙本或其他基於蒐集目的且合於當時科學技術之適當方式，對您提供的個人資料進行蒐集、處理及利用。
+					</p>
+
+					<h4>四、依據個人資料保護法第3條，您得就個人資料行使以下權利：</h4>
+					<p>
+						本公司對您的個人資料，將採行妥適安全之措施加以保護，並避免被不當使用。您可隨時透過本公司官方網站揭露之通訊方式，就您提供的個人資料行使下列權利：(1)請求查詢或閱覽；(2)製給複製本；(3)請求補充或更正；(4)請求停止蒐集、處理及利用；及(5)請求刪除。
+					</p>
+
+					<h4>五、本告知事項暨同意書之修訂：</h4>
+					<p>
+						本公司有權隨時修訂本隱私權政策之告知事項暨同意書，並於修訂後公佈在本公司官方網站，敬請隨時查閱。若您有任何問題，敬請透過本公司官方網站揭露之通訊方式進行聯繫，我們將儘快為您服務。
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- 新增送信的程式碼START -->
+	<script>
+		document.getElementById('contactForm').addEventListener('submit', async function (event) {
+			event.preventDefault();
+
+			// 收集表單資料
+			const formData = new FormData(event.target);
+			const to = 'maizizi@gmail.com';
+			const subject = '【昇陽匯翠】網站表單';
+
+			const name = formData.get('name');
+			const phone = formData.get('phone');
+			const city = formData.get('city'); // 縣市
+			const town = formData.get('town'); // 鄉鎮區
+			const housetype = formData.get('housetype');
+			const use = formData.get('use');
+
+			// 檢查必填欄位
+			if (!name || !phone || !housetype || !use) {
+				alert('請填寫所有必填欄位');
+				return;
+			}
+
+
+			// 檢查 city / town 是否選擇
+			// if (!city || city === "" || !town || town === "") {
+			// 	alert('請選擇縣市與鄉鎮區');
+			// 	return;
+			// }
+
+
+
+
+
+			// 組裝郵件內容
+			const text = `姓名：${name}\n電話：${phone}\n縣市：${city}\n鄉鎮區：${town}\n房型：${housetype}\n需求用途：${use}`;
+
+			const data = {
+				to: to,
+				subject: subject,
+				text: text
+			};
+
+			try {
+				const response = await fetch('https://www.maizizi.vaserver.com/api/mail_api.php', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json'
+					},
+					body: JSON.stringify(data)
+				});
+
+				const result = await response.json();
+				if (response.ok) {
+					showMessage(`傳送成功\n
+────────────\n
+感謝您的預約\n
+我們將盡快與您聯繫`);
+					event.target.reset(); // 這是清空一般 input
+					// 重置縣市下拉選單
+					try {
+						if (typeof $ !== "undefined" && $("#zipcode3").length > 0) {
+							// 檢查 twzipcode 方法是否存在
+							if (typeof $("#zipcode3").twzipcode === "function") {
+								$("#zipcode3").twzipcode("reset");
+							} else {
+								// 只需要重置 city 為第一個選項，town 會自動重置為"鄉鎮市區"
+								var citySelect = $("#zipcode3 select[name='city']");
+								citySelect.prop("selectedIndex", 0);
+								// 模擬滑鼠點擊來觸發 twzipcode 的連動機制
+								citySelect.trigger("change");
+								citySelect[0].dispatchEvent(
+									new Event("change", {
+										bubbles: true
+									})
+								);
+							}
+						}
+					} catch (error) {
+						console.error("重置縣市選單時發生錯誤:", error);
+						// 備用方案：手動重置
+						$("#zipcode3 select").prop("selectedIndex", 0);
+					}
+
+
+				} else {
+					showMessage('傳送失敗: ' + result.message);
+				}
+			} catch (error) {
+				console.error('Error:', error);
+				showMessage('傳送失敗: ' + error.message);
+			}
+
+			function showMessage(text) {
+				const toast = document.getElementById("formToast");
+				toast.textContent = text;
+				toast.style.display = "block";
+				// 先重置透明度（避免連點多次動畫亂掉）
+				toast.style.opacity = 0;
+				// 下一個 animation frame 執行淡入
+				setTimeout(() => {
+					toast.style.opacity = 1;
+				}, 16);
+
+				// 5秒後淡出並消失
+				setTimeout(() => {
+					toast.style.opacity = 0;
+					setTimeout(() => {
+						toast.style.display = "none";
+					}, 500);
+				}, 5000);
+			}
+
+		});
+	</script>
+
+
+	<!-- 用上方的程式碼代到以下的html「彈出美編訊息」取代 alert可淡入，5秒後自動淡出消失黑底 80%、白字 -->
+	<div id="formToast" style="display:none;position:fixed;left:50%;top:60px;z-index:9999;transform:translateX(-50%);
+  background:rgba(0,0,0,0.80);color:#fff;padding:15px 32px;border-radius:12px;font-size:1.13em;
+  box-shadow:0 2px 18px #0003;min-width:200px;text-align:center;pointer-events:none;
+  opacity:0;transition:opacity .4s; white-space: pre-line; line-height: 10px;"> </div>
+
+	<!-- 新增送信的程式碼END -->
+
+	<!-- TW City Selector -->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery-twzipcode@1.7.14/jquery.twzipcode.min.js"></script>
+
+
+	<script>
+		$("#zipcode3").twzipcode({
+			// "zipcodeIntoDistrict": true, // 郵遞區號自動顯示在地區
+
+			css: [
+				"city form-control",
+				"town form-control",
+				"zipcode d-none",
+			], // 自訂 "城市"、"地區" class 名稱 
+			countyName: "city", // 指定城市 select name
+			districtName: "town", // 指定地區 select name
+		});
+
+
+		$(function () {
+			// ...twzipcode 初始化...
+			$('select[name="city"]').attr('required', true)
+				.on('invalid', function () {
+					this.setCustomValidity('請選擇縣市');
+				})
+				.on('input', function () {
+					this.setCustomValidity('');
+				});
+			// $('select[name="town"]').attr('required', true)
+			// 	.on('invalid', function () {
+			// 		this.setCustomValidity('請選擇鄉鎮區');
+			// 	})
+			// 	.on('input', function () {
+			// 		this.setCustomValidity('');
+			// 	});
+		});
+	</script>
+
+
+
+
+	<!-- jQuery -->
+	<script src="js/jquery.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!--swiperjs JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<!-- Initialize Swiper -->
+	<script>
+		var swiper = new Swiper(".mySwiper", {
+			loop: true, // 循環模式選項
+			autoplay: true,
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+
+		});
+	</script>
+
+	<!--	Swiper2輪動後用css一開始放大縮小效果-->
+	<script>
+		var swiper = new Swiper(".mySwiper2", {
+			/**
+			 * 使用 creativeEffect 創意效果
+			 */
+			effect: 'creative',
+			creativeEffect: {
+				prev: {
+					translate: [0, 0, 0], // 前一張幻燈片的位移
+					scale: 1, // 放大比例
+					opacity: 0, // 完全透明
+				},
+				next: {
+					translate: [0, 0, 0], // 下一張幻燈片的位移
+					scale: 1.15, // 縮小比例
+					opacity: 0, // 完全透明
+				},
+				active: {
+					translate: [0, 0, 0], // 當前幻燈片的位置
+					scale: 1, // 正常大小
+					opacity: 1, // 完全顯示
+				},
+			},
+
+			speed: 2000, // 切換速度
+			loop: true, // 啟用循環播放
+			autoplay: {
+				delay: 8000, // 自動播放延遲
+				disableOnInteraction: false, // 用戶交互後不停止自動播放
+			},
+
+			grabCursor: true, // 啟用抓手光標
+			navigation: {
+				nextEl: ".swiper-button-next", // 下一張按鈕
+				prevEl: ".swiper-button-prev", // 上一張按鈕
+			},
+
+			pagination: {
+				el: ".swiper-pagination", // 分頁器
+				clickable: true, // 分頁器可點擊
+			},
+		});
+	</script>
+
+
+
+	<!--	縮略圖Swiper-->
+	<script>
+		$(document).ready(function () {
+			// 略縮圖
+			var galleryThumbs = new Swiper("#galleryThumbs", {
+				spaceBetween: 10,
+				slidesPerView: 6,
+				freeMode: true,
+				// loop: true,
+				// loopedSlides: 5, //looped slides should be the same
+				// centeredSlides: true,
+				watchSlidesVisibility: true, //啟用此選項，視口中的幻燈片將具有其他可見類
+				watchSlidesProgress: true, //啟用此功能可以計算每張幻燈片的進度
+				watchOverflow: true, //啟用此選項，視口中的幻燈片將具有其他可見類
+			});
+
+
+
+			// 主要的輪播圖
+			var galleryTop = new Swiper("#galleryTop", {
+				loop: true, // 循環模式選項
+				autoplay: true,
+				navigation: {
+					nextEl: ".swiper-button-next-1",
+					prevEl: ".swiper-button-prev-1",
+				},
+				thumbs: {
+					swiper: galleryThumbs,
+				},
+				pagination: {
+					el: ".swiper-pagination-1",
+					clickable: true,
+				},
+				on: {
+					slideChange: function () {
+						let activeIndex = this.activeIndex + 1;
+
+						let activeSlide = document.querySelector(
+							`#galleryThumbs .swiper-slide:nth-child(${activeIndex})`);
+						let nextSlide = document.querySelector(
+							`#galleryThumbs .swiper-slide:nth-child(${activeIndex + 1})`);
+						let prevSlide = document.querySelector(
+							`#galleryThumbs .swiper-slide:nth-child(${activeIndex - 1})`);
+
+						if (nextSlide && !nextSlide.classList.contains('swiper-slide-visible')) {
+							this.thumbs.swiper.slideNext()
+						} else if (prevSlide && !prevSlide.classList.contains(
+								'swiper-slide-visible')) {
+							this.thumbs.swiper.slidePrev()
+						}
+
+					}
+				}
+			});
+		});
+	</script>
+
+	<!--	手機版點擊消失手指-->
+	<script src="js/clickDisappear.js"></script>
+
+	<!-- Plugin JavaScript -->
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/cbpAnimatedHeader.js"></script>
+
+	<!-- Contact Form JavaScript -->
+	<script src="js/jqBootstrapValidation.js"></script>
+	<!--    <script src="js/contact_me.js"></script>-->
+
+	<!-- Custom Theme JavaScript -->
+	<script src="js/agency.js"></script>
+
+	<script type="text/javascript" src="fancybox/lib/jquery.mousewheel.pack.js"></script>
+
+	<!-- Add fancyBox -->
+	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+	<!-- Optionally add helpers - button, thumbnail and/or media -->
+	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css"
+		media="screen" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5">
+	</script>
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css"
+		media="screen" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+	<!-- 下拉提示箭頭 scroll down -->
+	<script src="js/arrow.js"></script>
+
+
+	<!--wow css页面滚动触发动画-->
+	<script src="wow/wow.js"></script>
+	<script>
+		wow = new WOW({
+			animateClass: 'animated', //animation.css動畫的class
+			offset: 100, //距離可視區域多少開始執行動畫
+			mobile: true, //在移動設備上打開/關閉WOW.js
+			live: true, //自動檢查頁面上的新WOW元素
+			callback: function (box) {
+				console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+			}
+		});
+		wow.init();
+		document.getElementById('moar').onclick = function () {
+			var section = document.createElement('section');
+			section.className = 'section--purple wow fadeInDown';
+			this.parentNode.insertBefore(section, this);
+		};
+	</script>
+
+
+
+	<script>
+		//页面加载完成之后隐藏loading
+		$(window).load(function () {
+			$(".loaderbg").hide();
+		});
+
+		//设置页面加载3秒之后隐藏loading
+		/*$(function () {
+		    setTimeout(function () {
+		        $(".loaderbg").hide();
+		        alert("页面加载完成啦！");
+		    },3000);
+		})*/
+	</script>
+
+
+	<!-- AOS.js效果 -->
+	<script>
+		AOS.init({
+			easing: 'ease-in-out'
+		});
+	</script>
+
+
+
+
+</body>
+
+</html>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+		$(".fancybox").fancybox({
+			closeBtn: false,
+			helpers: {
+				title: {
+					type: 'inside'
+				},
+				buttons: {}
+			}
+		});
+	});
+</script>
