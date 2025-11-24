@@ -18,10 +18,10 @@
 
 	<!--FB看的-->
 	<!--頁面內容描述-->
-	<meta name="description" content="萬坪公園首席 江子翠生活圈
-18-30-45坪松柏靚居 2257-6868">
-	<meta property="og:description" content="萬坪公園首席 江子翠生活圈
-18-30-45坪松柏靚居 2257-6868">
+	<meta name="description" content="萬坪公園首席   江子翠生活圈
+18-30-45坪松柏靚居   2257-6868">
+	<meta property="og:description" content="萬坪公園首席   江子翠生活圈
+18-30-45坪松柏靚居   2257-6868">
 
 	<!--FB看的-->
 	<!--縮圖網址-->
@@ -30,10 +30,10 @@
 
 
 	<!-- Schema標記，支援的有Google+, Pinterest 及 LinkedIn -->
-	<meta itemprop="name" content="萬坪公園首席 江子翠生活圈
-18-30-45坪松柏靚居 2257-6868">
-	<meta itemprop="description" content="萬坪公園首席 江子翠生活圈
-18-30-45坪松柏靚居 2257-6868">
+	<meta itemprop="name" content="萬坪公園首席   江子翠生活圈
+18-30-45坪松柏靚居   2257-6868">
+	<meta itemprop="description" content="萬坪公園首席   江子翠生活圈
+18-30-45坪松柏靚居   2257-6868">
 	<meta itemprop="image" content="./img/preview.jpg">
 
 
@@ -213,7 +213,7 @@
 			</div>
 
 			<div class="logo2">
-				<div data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="3000">
+				<div data-aos="fade-zoom-in" data-aos-delay="1000" data-aos-duration="3000">
 					<img src="./img/logo.png">
 				</div>
 			</div>
@@ -262,7 +262,7 @@
 			<div class=" content-container wow animate__animated animate__fadeInRight">
 				<img src="pic/1/logo01.png" class="logo-img">
 				<div class="pageright ">
-					<h2 class="section-title">做自己的太陽 你就是別人的光</h2>
+					<h2 class="section-title">做自己的太陽　你就是別人的光</h2>
 					<p class="textmain">
 						昇陽SUNTY，取自Sun與Eternity，象徵用心蓋自己的家。<br>
 						「昇陽」如同一顆升起的太陽，溫暖照耀人心。<br><br>
@@ -629,6 +629,18 @@
 							</div>
 
 
+							<div class="form-group ">
+								<select class="form-select form-control brand" name="brand"
+									aria-label="Default select example" required id="brand">
+									<option selected value>品牌認知</option>
+									<option value="A">A.知道昇陽，曾買過/住過昇陽建案</option>
+									<option value="B">B.聽過昇陽但不是很清楚，有興趣了解</option>
+									<option value="C">C.沒聽過昇陽，覺得建商品牌不是購屋首要重點</option>
+									<option value="D">D.不想了解，只對價格有興趣</option>
+
+								</select>
+							</div>
+
 
 							<div class="twzipcode" id="zipcode3">
 
@@ -642,9 +654,9 @@
 										<select class="form-select form-control house-type" name="housetype"
 											aria-label="Default select example" required id="houseType">
 											<option selected value>房型需求</option>
-											<option value="1房">1房</option>
-											<option value="2房">2房</option>
-											<option value="3房">3房</option>
+											<option value="1房">1房(17~18坪)</option>
+											<option value="2房">2房(28~30坪)</option>
+											<option value="3房">3房(40~45坪)</option>
 										</select>
 									</div>
 								</div>
@@ -653,12 +665,11 @@
 									<div class="form-group ">
 										<select class="form-select form-control tel-time" name="use"
 											aria-label="Default select example" required id="use">
-											<option selected value>購屋用途</option>
-											<option value="自用">自用</option>
-											<option value="換屋">換屋</option>
-											<option value="投資">投資</option>
-											<option value="置產">置產</option>
-											<option value="贈與">贈與</option>
+											<option selected value>購屋預算</option>
+											<option value="2000~2500萬">2000~2500萬</option>
+											<option value="2500~3500萬">2500~3500萬</option>
+											<option value="3500~4500萬">3500~4500萬</option>
+											<option value="4500~5500萬">4500~5500萬</option>
 										</select>
 									</div>
 								</div>
@@ -862,6 +873,7 @@
 			const town = formData.get('town'); // 鄉鎮區
 			const housetype = formData.get('housetype');
 			const use = formData.get('use');
+			const use = formData.get('brand'); //品牌
 
 			// 檢查必填欄位
 			if (!name || !phone || !housetype || !use) {
@@ -881,7 +893,8 @@
 
 
 			// 組裝郵件內容
-			const text = `姓名：${name}\n電話：${phone}\n縣市：${city}\n鄉鎮區：${town}\n房型：${housetype}\n需求用途：${use}`;
+			const text =
+				`姓名：${name}\n電話：${phone}\n縣市：${city}\n鄉鎮區：${town}\n房型：${housetype}\n需求預算：${use}\n品牌：${brand}`;
 
 			const data = {
 				to: to,

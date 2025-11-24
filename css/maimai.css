@@ -1755,7 +1755,7 @@ img {
 
 	/* 聯絡我們  */
 	.contact-map {
-		top: 10%;
+		top: 4%;
 	}
 
 	.contact-text {
@@ -1792,6 +1792,17 @@ img {
 
 	.swiper-absolute {
 		left: 25%;
+	}
+
+	/* 手繪標題 */
+	.arch-title {
+		font-size: 38px;
+	}
+
+	.arch-abs {
+		position: absolute;
+		top: 40%;
+		left: 7%;
 	}
 
 
@@ -2035,6 +2046,13 @@ img {
 	}
 
 
+	/* 交通輪動圖片文字大小 */
+
+	.pic-center {
+		width: 100%;
+		padding: 0px 10%;
+		margin: 0 auto;
+	}
 
 
 	/* arch01內容設定  */
