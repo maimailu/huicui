@@ -1645,8 +1645,34 @@ img {
 
 
 /*  Side Menu 電腦側邊固定 */
+.sidemenu {
+	position: fixed;
+	z-index: 500;
+	right: 20px;
+	bottom: 200px;
+	width: 44px;
+	height: 100px;
+	/* background-color: #FF0004; */
+}
 
-/* 以下是目前svg圖檔按鈕的css樣式 */
+.side-btn {
+	width: 44px;
+	height: 44px;
+	color: #1F934A;
+	font-size: 1.8rem;
+	background-color: #fff;
+	border-radius: 50%;
+	border: solid 1px #1F934A;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 0 12px 0;
+	transition: background-color 0.18s ease, color 0.18s ease;
+}
+
+/* 以上的是純index (fontawesome icon)網頁的icon按鈕的css樣式 */
+
+/* 以下是目前svg圖檔滑過去按鈕的css樣式，但上面的不可以刪掉，因為上面有含圓的外框 */
 .side-btn:hover,
 .side-btn:focus,
 .side-btn:active {
