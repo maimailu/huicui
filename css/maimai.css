@@ -1643,6 +1643,26 @@ img {
 	margin-top: 5px;
 }
 
+
+/*  Side Menu 電腦側邊固定 */
+
+/* 以下是目前svg圖檔按鈕的css樣式 */
+.side-btn:hover,
+.side-btn:focus,
+.side-btn:active {
+	color: #fff;
+	background-color: #1F934A;
+	text-decoration: none;
+}
+
+/* make svg path color transition smoothly */
+.side-btn svg path {
+	transition: fill 0.18s ease;
+}
+
+
+/*  Side Menu 電腦側邊固定 end */
+
 @media screen and (max-width: 1440px) {
 
 	.logo {
