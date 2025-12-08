@@ -703,7 +703,8 @@
 							<!-- 在寄信開始時先 disable 按鈕，寄信全部完成後 再恢復 enable。
 							你只要在你的 submit 事件裡加入兩行：寄送前： submitBtn.disabled = true;結束後： submitBtn.disabled = false; -->
 							<div class=" text-center">
-								<div id="success"></div>
+
+								<!-- <div id="success"></div> -->
 								<button type="submit" id="submitBtn" class="btn btn-xl" name="button">送出訊息</button>
 							</div>
 						</form>
@@ -891,7 +892,7 @@
 
 			// 收集表單資料
 			const formData = new FormData(event.target);
-			const to = 'maizizi@gmail.com';
+			const to = 'maizizi@gmail.com,u8612005@yahoo.com.tw,service@o2owhynot.com';
 			const subject = '【昇陽匯翠】網站表單';
 
 			const name = formData.get('name');
@@ -998,6 +999,13 @@
 					}, 500);
 				}, 5000);
 			}
+
+
+			// 🔓 任務完成後恢復按鈕
+			submitBtn.disabled = false;
+			submitBtn.style.opacity = "1";
+			submitBtn.style.cursor = "pointer";
+
 
 		});
 	</script>
