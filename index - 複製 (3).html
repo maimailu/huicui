@@ -197,31 +197,109 @@
 
 	<header>
 
-		<!-- 背景影片容器 -->
+		<style>
+			/* 動態選單遮罩 */
+			.dynamic-menu {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100px;
+				background: rgba(0, 0, 0, 0.5);
+				z-index: 20;
+				display: flex;
+				align-items: center;
+				justify-content: center;
 
-		<div class="">
-			<iframe style=" width:1920px; height: 1080px;"
-				src="https://www.youtube.com/embed/fkrGTBqo00w?autoplay=1&mute=1&loop=1&playlist=fkrGTBqo00w&controls=0&disablekb=1&modestbranding=1&playsinline=1"
-				frameborder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-				allowfullscreen>
-			</iframe>
+				/* 動畫過渡效果：讓隱藏/顯示變得很滑順 */
+				transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+			}
+
+			/* 當這個 class 被加上去時，選單會往上縮回去 */
+			.menu-hidden {
+				transform: translateY(-100%);
+			}
+
+			.dynamic-menu a {
+				color: white;
+				text-decoration: none;
+				margin: 0 20px;
+				font-size: 15px;
+				letter-spacing: 1px;
+			}
+
+			.dynamic-menu a:hover {
+				color: #3ea6ff;
+			}
+		</style>
+		</head>
+
+		<body>
 
 
-			<!-- 半透明色塊 -->
-			<div class="bg-color">
+			<div class="video-container">
+				<nav id="navbar" class="dynamic-menu">
+					<!-- <a href="#">精選內容</a>
+					<a href="#">頻道資訊</a>
+					<a href="#">最新消息</a> -->
+				</nav>
 
-			</div>
-
-			<div class="logo2">
-				<div data-aos="fade-zoom-in" data-aos-delay="1000" data-aos-duration="3000">
-					<img src="./img/logo.png">
+				<div class="video-aspect">
+					<iframe style=" width:1920px; height: 1080px;"
+						src="https://www.youtube.com/embed/fkrGTBqo00w?autoplay=1&mute=1&loop=1&playlist=fkrGTBqo00w&controls=0&disablekb=1&modestbranding=1&playsinline=1"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen>
+					</iframe>
 				</div>
 			</div>
 
-			<!-- 圖說 -->
-			<!-- <div class="pic-txt">空拍實景</div> -->
-		</div>
+			<script>
+				let lastScrollTop = 0;
+				const navbar = document.getElementById('navbar');
+
+				window.addEventListener('scroll', function () {
+					let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+					// 判斷捲動方向
+					if (scrollTop > lastScrollTop && scrollTop > 50) {
+						// 向下捲動 -> 隱藏選單
+						navbar.classList.add('menu-hidden');
+					} else {
+						// 向上捲動 -> 顯示選單
+						navbar.classList.remove('menu-hidden');
+					}
+
+					// 更新最後一次的捲動位置，並防止在某些設備上出現負值
+					lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+				}, false);
+			</script>
+
+			<!-- 背景影片容器 -->
+
+			<div class="">
+				<iframe style=" width:1920px; height: 1080px;"
+					src="https://www.youtube.com/embed/fkrGTBqo00w?autoplay=1&mute=1&loop=1&playlist=fkrGTBqo00w&controls=0&disablekb=1&modestbranding=1&playsinline=1"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen>
+				</iframe>
+
+
+				<!-- 半透明色塊 -->
+				<div class="bg-color">
+
+				</div>
+
+				<div class="logo2">
+					<div data-aos="fade-zoom-in" data-aos-delay="1000" data-aos-duration="3000">
+						<img src="./img/logo.png">
+					</div>
+				</div>
+
+				<!-- 圖說 -->
+				<!-- <div class="pic-txt">空拍實景</div> -->
+			</div>
 
 
 	</header>
