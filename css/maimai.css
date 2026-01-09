@@ -1643,7 +1643,6 @@ img {
 	margin-top: 5px;
 }
 
-
 /*  Side Menu 電腦側邊固定 */
 .sidemenu {
 	position: fixed;
@@ -2543,6 +2542,16 @@ section#contact .form-group {
 	width: 80%;
 	/* 縮小約 20% */
 	max-width: 1536px;
+	/* 保留桌面時的最大寬度 */
+	aspect-ratio: 16 / 9;
+	height: auto;
+}
+
+/* 專為外觀長影片（youtube-iframe）調整：桌面全螢幕 1000% */
+.youtube-iframe2 iframe {
+	width: 100%;
+	/* 縮小約 20% */
+	max-width: 1920px;
 	/* 保留桌面時的最大寬度 */
 	aspect-ratio: 16 / 9;
 	height: auto;
