@@ -2547,7 +2547,7 @@ section#contact .form-group {
 	height: auto;
 }
 
-/* 專為外觀長影片（youtube-iframe）調整：桌面全螢幕 1000% */
+/* 專為外觀長影片（youtube-iframe）調整：桌面全螢幕 100% */
 .youtube-iframe2 iframe {
 	width: 100%;
 	/* 縮小約 20% */
@@ -2588,6 +2588,16 @@ section#contact .form-group {
 	width: 100%;
 	padding: 40px 0;
 	margin-top: 20px;
+
+}
+
+.youtube-iframe2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 0px 0;
+	margin-top: 0px;
 
 }
 
