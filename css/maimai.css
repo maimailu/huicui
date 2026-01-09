@@ -2591,15 +2591,7 @@ section#contact .form-group {
 
 }
 
-.youtube-iframe2 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	padding: 0px 0;
-	margin-top: 0px;
 
-}
 
 .youtube-iframe iframe {
 	border-radius: 8px;
