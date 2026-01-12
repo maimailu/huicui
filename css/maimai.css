@@ -110,6 +110,8 @@ padding-top: 30px
 /* youtube影片不顯示logo */
 
 .youtube-none {
+	top: 50px;
+	left: 50px;
 	pointer-events: none;
 
 }
