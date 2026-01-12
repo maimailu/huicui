@@ -93,11 +93,12 @@ padding-top: 30px
 	z-index: 1;
 }
 
+/*按鈕圓角效果*/
+
 .rounded-x {
 	border-radius: 50% !important;
 }
 
-/*按鈕圓角效果*/
 
 /*以上是影片的play按鈕*/
 
@@ -106,6 +107,14 @@ padding-top: 30px
 }
 
 
+/* youtube影片不顯示logo */
+
+.youtube-none {
+	pointer-events: none;
+
+}
+
+/* youtube影片不顯示logo end */
 
 
 .btn-primary {
