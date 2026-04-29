@@ -200,12 +200,11 @@
 		<!-- 背景影片容器 -->
 
 		<div class="">
-			<iframe style=" width:1920px; height: 1080px;"
-				src="https://www.youtube.com/embed/fkrGTBqo00w?autoplay=1&mute=1&loop=1&playlist=fkrGTBqo00w&controls=0&disablekb=1&modestbranding=1&playsinline=1"
-				frameborder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-				allowfullscreen>
-			</iframe>
+
+			<video style="width:1920px; height:1080px;" autoplay muted loop playsinline preload="none"
+				poster="/img/huicui-head-cover.jpg" class="hero-video" preload="metadata">
+				<source src="https://pub-b1b1aa3fa5e04711a9ba136282763955.r2.dev/huicui-head.mp4" type="video/mp4">
+			</video>
 
 
 			<!-- 半透明色塊 -->
@@ -547,13 +546,13 @@
 
 	<!-- 外觀影片 Section -->
 
-	<!-- <div class="bg01 youtube-iframe2">
+	<div class="bg01 youtube-iframe2">
 		<iframe width="1920" height="864" src="https://www.youtube.com/embed/OuRNSj2UnkQ?rel=0&modestbranding=1"
 			title="YouTube video player" frameborder="0"
 			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 			referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
 		</iframe>
-	</div> -->
+	</div>
 
 
 
@@ -629,7 +628,6 @@
 										<select class="form-select form-control house-type" name="housetype"
 											aria-label="Default select example" required id="houseType">
 											<option selected value>房型需求</option>
-											<option value="1房">1房(17~18坪)</option>
 											<option value="2房">2房(28~30坪)</option>
 											<option value="3房">3房(40~45坪)</option>
 										</select>
